@@ -1,0 +1,14 @@
+@use '../abstracts/functions' as f;
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    place-items: center;
+    height: 100%;
+    padding: clamp(f.rem(16), 5vw, f.rem(32)); // Responsive padding
+    min-width: f.rem(375); /* Limit the body width to 375px */
+    margin: 0 auto; /* Center the layout horizontally */
+}

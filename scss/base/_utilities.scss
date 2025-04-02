@@ -2,8 +2,6 @@
 @use '../abstracts/variables' as v;
 @use '../abstracts/mixins' as m;
 
-// Mobile-first grid system
-body {
-    display: grid;
+.text-center {
+    text-align: center;
 }
-

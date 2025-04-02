@@ -2,8 +2,9 @@
 @use '../abstracts/variables' as v;
 @use '../abstracts/mixins' as m;
 
-// Mobile-first grid system
 body {
-    display: grid;
+    background-color: v.$background-light;
+    height: 100dvh;
+    
+    
 }
-

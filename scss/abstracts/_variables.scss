@@ -1,13 +1,30 @@
-:root {
-    /* Primary Colors */
-    --primary-red: hsl(0, 78%, 62%);
-    --primary-cyan: hsl(180, 62%, 55%);
-    --primary-orange: hsl(34, 97%, 64%);
-    --primary-blue: hsl(212, 86%, 64%);
-  
-    /* Neutral Colors */
-    --neutral-grey-500: hsl(234, 12%, 34%);
-    --neutral-grey-400: hsl(212, 6%, 44%);
-    --neutral-white: hsl(0, 0%, 100%);
-  }
-  
+@use '../abstracts/functions' as f;
+@use '../abstracts/mixins' as m;
+
+
+// Variables for the project
+
+// Primary Colors
+$primary-red: hsl(0, 78%, 62%);
+$primary-cyan: hsl(180, 62%, 55%);
+$primary-orange: hsl(34, 97%, 64%);
+$primary-blue: hsl(212, 86%, 64%);
+
+// Neutral Colors
+$neutral-grey-500: hsl(234, 12%, 34%);
+$neutral-grey-400: hsl(212, 6%, 44%);
+$neutral-white: hsl(0, 0%, 100%);
+
+// Background Colors
+$background-light: hsl(0, 0%, 98%);
+
+// Font Family
+$font-family-primary: 'Poppins', sans-serif;
+
+// Font Sizes
+$font-size-body: f.rem(15);
+
+// Font Weights
+$font-weight-light: 200;
+$font-weight-regular: 400;
+$font-weight-semibold: 600;

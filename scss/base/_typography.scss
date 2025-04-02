@@ -1,3 +1,25 @@
 @use '../abstracts/functions' as f;
 @use '../abstracts/variables' as v;
 @use '../abstracts/mixins' as m;
+
+
+
+// Base Typography
+
+body {
+    font-family: v.$font-family-primary;
+    font-size: v.$font-size-body;
+    font-weight: v.$font-weight-regular;
+    color: v.$neutral-grey-400;
+
+}
+
+h1 {
+    font-size: clamp(f.rem(24), 5vw, f.rem(36)); // Responsive font size
+    font-weight: v.$font-weight-light;
+}
+
+h2 {
+    font-size: clamp(f.rem(24), 5vw, f.rem(30)); // Responsive font size
+    font-weight: v.$font-weight-semibold;
+}
