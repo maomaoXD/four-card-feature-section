@@ -8,7 +8,10 @@
     grid-template-rows: auto;
     place-items: center;
     height: 100%;
-    padding: clamp(f.rem(16), 5vw, f.rem(32)); // Responsive padding
-    min-width: f.rem(375); /* Limit the body width to 375px */
-    margin: 0 auto; /* Center the layout horizontally */
+    padding: clamp(f.rem(16), 5vw, f.rem(32));
+    min-width: f.rem(375);
+    max-width: f.rem(1200);
+    margin: 0 auto;
+
+    
 }

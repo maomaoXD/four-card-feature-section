@@ -17,9 +17,38 @@ body {
 h1 {
     font-size: clamp(f.rem(24), 5vw, f.rem(36)); // Responsive font size
     font-weight: v.$font-weight-light;
+    line-height: 1.5;
 }
 
 h2 {
     font-size: clamp(f.rem(24), 5vw, f.rem(30)); // Responsive font size
     font-weight: v.$font-weight-semibold;
+    line-height: 1.5;
+    
 }
+
+.header {
+    padding: clamp(f.rem(16), 5vw, f.rem(32)); 
+}
+
+.header__description {
+    font-size: clamp(f.rem(14), 2vw, f.rem(16)); 
+    margin: clamp(f.rem(8), 2vw, f.rem(16)) 0; 
+    font-weight: v.$font-weight-regular;
+    color: v.$neutral-grey-400;
+
+    @media (min-width: 768px) {
+        width: 60%;
+        padding-top: f.rem(20);
+        margin: 0 auto; 
+        
+    }
+}
+
+.card__description {
+    font-size: clamp(f.rem(12), 2vw, f.rem(16)); 
+    margin: clamp(f.rem(8), 2vw, f.rem(16)) 0; 
+    font-weight: v.$font-weight-regular;
+    color: v.$neutral-grey-400;
+}
+

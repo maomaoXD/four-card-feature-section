@@ -4,7 +4,15 @@
 
 body {
     background-color: v.$background-light;
-    height: 100dvh;
-    
-    
+    color: v.$neutral-grey-500;
+    font-family: v.$font-family-primary;
+    font-size: v.$font-size-body;
+    line-height: 1.6;
+    min-height: 100dvh;
+    margin: 0;
+}
+
+a:focus-visible, button:focus-visible {
+    outline: 2px solid v.$primary-blue; 
+    outline-offset: 2px;
 }

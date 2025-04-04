@@ -1,0 +1,52 @@
+@use '../abstracts/functions' as f;
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+
+// Card Component
+
+.grid > .card{
+  margin: f.rem(16);
+
+}
+
+.grid__middle > .card {
+  margin: f.rem(16); 
+}
+
+.card {
+    background-color: v.$neutral-white;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    position: relative; 
+    padding: clamp(f.rem(24), 2vw, f.rem(40)); 
+    border-radius: f.rem(8);
+    overflow: hidden; 
+    @include box-shadow(0, f.rem(4), f.rem(8), rgba(0, 0, 0, 0.2));
+}
+
+.card__icon {
+    align-self: flex-end; 
+    margin: clamp(f.rem(12), 2vw, f.rem(16)) 0;
+    width: f.rem(60); 
+    height: auto; 
+  }
+
+.card--supervisor {
+  @include border-top(v.$primary-cyan);
+}
+
+.card--team-builder {
+  @include border-top(v.$primary-orange);
+}
+
+.card--karma {
+  @include border-top(v.$primary-blue);
+}
+
+.card--calculator {
+  @include border-top(v.$primary-red);
+}
+
+

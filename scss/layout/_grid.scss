@@ -7,3 +7,16 @@ body {
     display: grid;
 }
 
+.grid {
+    display: grid;
+    gap: f.rem(16);
+
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(3, 1fr);
+        place-items: center;
+    }
+}
+
+.grid__middle {
+    display: grid;
+}

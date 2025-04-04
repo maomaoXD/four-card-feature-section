@@ -17,35 +17,39 @@
     <header class="header text-center">
       <h1 class="header__title">Reliable, efficient delivery</h1>
       <h2 class="header__subtitle">Powered by Technology</h2>
-    </header>
-
-    <main class="main-content">
-      <p class="main-content__description">
+      <p class="header__description">
         Our Artificial Intelligence powered tools use millions of project data points 
         to ensure that your project is successful.
       </p>
+    </header>
+
+    <main class="main-content" role="main">
       
       <div class="grid">
-        <section class="card card--supervisor">
-          <h3 class="card__title">Supervisor</h3>
+        <section class="card card--supervisor" role="region" aria-labelledby="supervisor-title">
+          <h3 id="supervisor-title" class="card__title">Supervisor</h3>
           <p class="card__description">Monitors activity to identify project roadblocks</p>
+          <img src="./images/icon-supervisor.svg" alt="Supervisor Icon" class="card__icon">
         </section>
 
         <div class="grid__middle">
-          <section class="card card--team-builder">
-            <h3 class="card__title">Team Builder</h3>
+          <section class="card card--team-builder" role="region" aria-labelledby="team-builder-title">
+            <h3 id="team-builder-title" class="card__title">Team Builder</h3>
             <p class="card__description">Scans our talent network to create the optimal team for your project</p>
+            <img src="./images/icon-team-builder.svg" alt="Team Builder Icon" class="card__icon">
           </section>
 
-          <section class="card card--karma">
-            <h3 class="card__title">Karma</h3>
+          <section class="card card--karma" role="region" aria-labelledby="karma-title">
+            <h3 id="karma-title" class="card__title">Karma</h3>
             <p class="card__description">Regularly evaluates our talent to ensure quality</p>
+            <img src="./images/icon-karma.svg" alt="Karma Icon" class="card__icon">
           </section>
 
         </div>
-        <section class="card card--calculator">
-          <h3 class="card__title">Calculator</h3>
+        <section class="card card--calculator" role="region" aria-labelledby="calculator-title">
+          <h3 id="calculator-title" class="card__title">Calculator</h3>
           <p class="card__description">Uses data from past projects to provide better delivery estimates</p>
+          <img src="./images/icon-calculator.svg" alt="Calculator Icon" class="card__icon">
         </section>
       </div>
     </main>
